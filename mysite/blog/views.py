@@ -17,7 +17,7 @@ def post_share(request, post_id):
             cd = form.cleaned_data
             post_url = request.build_absolute_uri(post.get_absolute_url())
             subject = '{} ({}) recommends you reading "{}"'.format(cd['name'], cd['email'], post.title)
-            message = 'Read "{}" at {}\n\n{}s comments: {}'.format(post.title, post_url, cd['name'], cd['comments'])
+            message = 'Read "{}" at {}\n\n{}"s comments: {}'.format(post.title, post_url, cd['name'], cd['comments'])
             send_mail(subject, message, 'admin@myblog.com', [cd['to']])
             sent = True
     else:
@@ -25,7 +25,6 @@ def post_share(request, post_id):
     return render(request, 'blog/post/share.html', {'post': post,
                                                     'form': form,
                                                     'sent': sent})
-
 
 
 class PostListView(ListView):
