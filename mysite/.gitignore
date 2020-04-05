@@ -1,8 +1,0 @@
-.idea/
-mysite/__pycache__/
-blog/__pypcache__/
-mysite/local_settings.py
-blog/migrations/__pycache__/
-mysite/db.sqlite3
-
-
