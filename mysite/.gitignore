@@ -3,6 +3,6 @@ mysite/__pycache__/
 blog/__pypcache__/
 mysite/local_settings.py
 blog/migrations/__pycache__/
-blog/db.sqlite3
+mysite/db.sqlite3
 
 
