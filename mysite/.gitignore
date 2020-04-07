@@ -1,8 +1,8 @@
 .idea/
 mysite/__pycache__/
-blog/__pycache__/
 mysite/local_settings.py
+blog/__pycache__/
 blog/migrations/__pycache__/
-mysite/db.sqlite3
+db.sqlite3
 
 
